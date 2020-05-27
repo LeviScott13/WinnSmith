@@ -9,4 +9,4 @@ Tools used:
 - CSS
 - Bootstrap
 
-![](Images/Website.png)
+![](Images/Website.PNG)
