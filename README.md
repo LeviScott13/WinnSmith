@@ -1,7 +1,7 @@
 # WinnSmith
 Website
 
-Creating a personal website for aspiring Atlanta actor: Winn Smith
+Creating a personal website for local Atlanta actor: Winn Smith
 
 Tools used:
 
