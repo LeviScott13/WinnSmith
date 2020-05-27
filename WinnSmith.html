@@ -1,0 +1,100 @@
+<html>
+    <title>Winn Smith</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Material Design Bootstrap</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="Stylesheet.css">
+    </head>
+    <body>
+        <div class=social>
+            <button type="button" class="btn btn-tw">About</button>
+            <button type="button" class="btn btn-tw">Gallery</button>
+            <button type="button" class="btn btn-fb" onclick=" window.open('https://www.facebook.com/alexander.smith.7330763','_blank')"><i class="fab fa-facebook-f pr-1"></i>Facebook</button>
+            <button type="button" class="btn btn-ins" onclick=" window.open('https://www.instagram.com/unofficialwinnsmith/?hl=en','_blank')"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+            <button type="button" class="btn btn-tw" onclick=" window.open('https://twitter.com/alexsmith730','_blank')"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+        </div>
+        <div id=container>
+            <div style="float: left;" id=background></div>
+            <div style="float: left;" id=info>
+                <center>
+                    </br></br>
+                    <font style="font-size: 500%;">Winn Smith</font>
+                    </br>
+                    <font style="font-size: 200%;">Actor</font>
+                    </br></br>
+                    <div style="height: 60%; width: 60%;">
+
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" height="80%" src="Images/Winn2.jpg"
+                                    alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" height="80%" src="Images/Winn3.jpg"
+                                    alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" height="80%" src="Images/Winn3.jpg"
+                                    alt="Second slide">
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                                    </br></br>
+                                    <img src="Images/Winn2.jpg" width="15">
+                                </li>
+                                <li data-target="#carousel-thumb" data-slide-to="1">
+                                    </br></br>
+                                    <img src="Images/Winn3.jpg" width="15">
+                                </li>
+                                <li data-target="#carousel-thumb" data-slide-to="2">
+                                </br></br>
+                                <img src="Images/Winn3.jpg" width="15">
+                            </li>
+                            </ol>
+                        </div>
+                        <!--/.Carousel Wrapper-->
+
+                    </div>
+                </center>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#carousel").carousel();
+
+            function facebook(){
+                var url = "https://www.facebook.com/alexander.smith.7330763";
+                window.location(url);
+            }
+        </script>
+    </body>
+</html>
