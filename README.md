@@ -1,7 +1,9 @@
 # WinnSmith
 Website
 
-Creating a personal website for local Atlanta actor: Winn Smith
+Personal website for local Atlanta actor: Winn Smith
+
+:construction_worker: :construction: :  Under construction
 
 Tools used:
 
