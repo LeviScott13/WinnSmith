@@ -46,7 +46,6 @@ span{
 .imgContainer{
     height: 100%;
 }
-
 /* Buttons */
 .btn{
     background-color: black;
@@ -74,7 +73,7 @@ span{
     margin-right: 20px;
     margin-top: 60px;
     margin-bottom: 60px;
-    width: 40%;
+    width: 50%;
     overflow: hidden;
   }
   
@@ -82,7 +81,6 @@ span{
     display: block;
     height: 200px;
   }
-  
   @media screen and ( min-width: 768px ) {
     .carousel-cell img {
       height: 400px;
