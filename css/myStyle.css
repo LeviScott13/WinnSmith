@@ -22,7 +22,15 @@ span{
     font-style: Roboto;
 }
 #nav-links:hover{
-    color: #ff6666;
+    color: gray;
+}
+.icon{
+    fill: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.icon:hover{
+    fill: gray;
 }
 .card{
     height: 350px;
