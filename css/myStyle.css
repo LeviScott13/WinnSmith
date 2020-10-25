@@ -8,6 +8,9 @@ h1{
 h3{
     color: white;
 }
+h5{
+    color: white;
+}
 span{
     color: white;
 }
@@ -34,7 +37,6 @@ span{
     fill: gray;
 }
 .card{
-    height: 350px;
     margin-top: 10px;
     background: black;
     color: gray;
@@ -44,13 +46,14 @@ span{
 .card:hover{
     transform: scale(1.1);
 }
+
 .imgContainer{
     height: 100%;
 }
 /* Buttons */
 .btn{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 22px;
     text-align: center;
     text-decoration: none;
@@ -58,32 +61,10 @@ span{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 2px solid white;
-}
-.btn:hover {
-    background-color: white;
-    color: black;
     border: 2px solid black;
 }
-
-.carousel {
-    background: black;
-  }
-  
-  .carousel-cell {
-    margin-right: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    width: 50%;
-    overflow: hidden;
-  }
-  
-  .carousel-cell img {
-    display: block;
-    height: 200px;
-  }
-  @media screen and ( min-width: 768px ) {
-    .carousel-cell img {
-      height: 400px;
-    }
-  }
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}

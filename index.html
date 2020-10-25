@@ -10,23 +10,23 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body style="background: black">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="margin: 0px; background: black">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="mr-auto"></div>
+                <div class="mr-auto"><h1>Winn Smith</h1></div>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#aboutMe" id=nav-links>About<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#aboutMe" id=nav-links onclick="showAbout()">About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#work" id=nav-links>Work</a>
+                        <a class="nav-link" href="#work" id=nav-links onclick="showWork()">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery" id=nav-links>Gallery</a>
+                        <a class="nav-link" href="#gallery" id=nav-links onclick="showGallery()">Gallery</a>
                     </li>
                     <li>
                         <!---------------------------- Instagram ------------------------------>
@@ -45,197 +45,182 @@
             </div>
         </nav>
     </header>
-    
-    <main>
+    <main style="border: 2px solid black; height: 100%;">
 
-        <div class="container" style="padding-top: 130px; padding-bottom: 100px; margin: 0 auto 0 auto" id=aboutMe>
+        <!-------------- About -------------->
+        <div class="container" style="padding-top: 100px;" id=aboutMe>
             <div class="row">
-                <div class="col-md-6 col-sm-12 text-center" style="float: left; background: #ddd;">
-                    <img src="assets/Background/Winn.jpg" width="100%" alt="">
+                <div class="col-md-6 col-sm-12 text-center" style="margin: 0 auto 0 auto;" data-aos="fade-up" data-aos-duration="1500">
+                    <img id=me style="box-shadow: 2px 3px 15px black;" src="assets/Background/Winn.jpg" width="100%" alt="">
                 </div>
-                <div class="col-md-6 col-sm-12" style="float: left; background: #ddd;">
-                    <h1 style="color: black; margin: 0px; margin-top: 20px; margin-left: 50px;">Winn Smith</h1><br>
-                    <h4 style="color: black; margin: 0px; margin-left: 50px;">Actor</h4>
-                    <p style="margin-top: 60px; line-height: 30px; margin-left: 50px; margin-right: 40px;">I am an actor based in Atlanta, GA. Acting is my passion. Throughout my career I've been a lead actor, a stunt double and have made appearances as an extra. In my spare time I enjoy skating, playing music and Muay Thai.  
-                    </p>
-                    <br><br>
-                    <div style="width: 25%; float: left; text-align: center;">
-                        <h1 style="color: black; margin: 0px; margin-top: 20px;">5</h1><br>
-                        <h6 style="color: black; margin: 0px;">Lead Roles</h6>
-                    </div>
-                    <div style="width: 25%; float: left; text-align: center;">
-                        <h1 style="color: black; margin: 0px; margin-top: 20px;">1</h1><br>
-                        <h6 style="color: black; margin: 0px;">Supporting Roles</h6>
-                    </div>
-                    <div style="width: 25%; float: left; text-align: center;">
-                        <h1 style="color: black; margin: 0px; margin-top: 20px;">1</h1><br>
-                        <h6 style="color: black; margin: 0px; margin-bottom: 30px;">Stunt Roles</h6>
-                    </div>
-                    <div style="width: 25%; float: left; text-align: center;">
-                        <h1 style="color: black; margin: 0px; margin-top: 20px;">2</h1><br>
-                        <h6 style="color: black; margin: 0px; margin-bottom: 30px;">Series Regular</h6>
-                    </div>
+                <div class="col-md-6 col-sm-12" style="margin: 0 auto 0 auto;" data-aos="fade-right" data-aos-duration="1200">
+                    
                 </div>
             </div>
         </div>
+
         <!-------------- Work -------------->
-        <div class="bg" style="background: black;" id=work>
-            <div class="container" style="padding-top: 150px; padding-bottom: 180px;">
-                <div class="row" style="padding-bottom: 50px;" data-aos="fade-down" data-aos-duration="1000">
-                    <div class="col-md-2 col-sm-12" style="margin: 0 auto 0 auto;">
-                        <h1 style="color: white;">Work</h1>
+        <div class="container" id=work style="padding-top: 100px; padding-bottom: 50px; display: none;" data-aos="fade-up" data-aos-duration="1800">
+            <div class="row row-cols-1 row-cols-md-3">
+                
+                <!-- Performance -->
+                <div class="col mb-4">
+                    <div class="card" style="background: #08061E; height: 500px;">
+                        <div class="projImgContainer">
+                            <img src="assets/Work/md.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="border-bottom: 2px solid red; padding-bottom: 10px;">Mountain Dew</h5>
+                            <br>
+                            <p class="card-text">Featured in a Mountain Dew commercial where I performed as a stunt double for professional NASCAR driver Chase Elliot.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Flickity HTML init -->
-                <div class="carousel" data-aos="fade-up" data-aos-duration="1800">
-                    <div class="carousel-cell">
-                        <img src="assets/Work/movie2.jpg" width="100%" alt="...">
-                        <div style="text-align: center;">
-                            <span>Role: Lead Actor</span>
+                <!-- Performance -->
+                <div class="col mb-4">
+                    <div class="card" style="background: #08061E; height: 500px;">
+                        <div class="projImgContainer">
+                            <img src="assets/Work/md.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="border-bottom: 2px solid red; padding-bottom: 10px;">Mountain Dew</h5>
+                            <br>
+                            <p class="card-text">Featured in a Mountain Dew commercial where I performed as a stunt double for professional NASCAR driver Chase Elliot.</p>
                         </div>
                     </div>
-                    <div class="carousel-cell">
-                        <img src="assets/Work/movie1.jpg" width="100%" alt="...">
-                        <div style="text-align: center;">
-                            <span>Role: Lead Actor</span> 
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="assets/Work/relapse.PNG" width="100%" alt="...">
-                        <div style="text-align: center;">
-                            <span>Role: Lead Actor</span> 
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="assets/Work/md.jpg" width="100%" alt="...">
-                        <div style="text-align: center;">
-                            <span>Role: Stunt Double</span>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="assets/Work/strange.png" width="100%" alt="...">
-                        <div style="text-align: center;">
-                            <span>Role: Extra</span> 
-                        </div>
-                    </div>
-                    
                 </div>
-                    
+
+                <!-- Performance -->
+                <div class="col mb-4">
+                    <div class="card" style="background: #08061E; height: 500px;">
+                        <div class="projImgContainer">
+                            <img src="assets/Work/md.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="border-bottom: 2px solid red; padding-bottom: 10px;">Mountain Dew</h5>
+                            <br>
+                            <p class="card-text">Featured in a Mountain Dew commercial where I performed as a stunt double for professional NASCAR driver Chase Elliot.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
+        
         <!-------------- Gallery -------------->
-        <div class="bg" style="background: white;" id=gallery>
-            <div class="container" style="padding-top: 100px; padding-bottom: 50px;">
-                <div class="row" style="padding-bottom: 50px;" data-aos="fade-down" data-aos-duration="1000">
-                    <div class="col-md-2 col-sm-12" style="margin: 0 auto 0 auto">
-                        <h1 style="color: black;">Gallery</h1>
+        <div class="container" id=gallery style="padding-top: 100px; padding-bottom: 50px; display: none;">
+
+            <div class="row row-cols-1 row-cols-md-3">
+                
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer" style="background: black;">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Falexander.smith.7330763%2Fvideos%2F10160147223024638%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn1.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn5.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn6.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-3">
-
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn1.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn2.jpg" height="100%" class="card-img-top" alt="...">
                         </div>
                     </div>
-                        
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1400">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn5.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1800">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn6.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn2.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1400">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn4.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Image -->
-                    <div class="col mb-4" data-aos="fade-up" data-aos-duration="1800">
-                        <div class="card">
-                            <div class="imgContainer">
-                                <img src="assets/Gallery/winn3.jpg" height="100%" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                    </div>
+                </div>
                     
-                    <div class="col-md-12 text-center">
-                        <button class=btn onClick='window.location="#work"'>More Images!</button>
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn4.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- More Images -->
+            <div class="row row-cols-1 row-cols-md-3" id=more style="display: none;">
+                <!-- Image -->
+                <div class="col mb-4" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="card" style="height: 350px;">
+                        <div class="imgContainer">
+                            <img src="assets/Gallery/winn3.jpg" height="100%" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 text-center">
+                <a href="#more"><button class=btn id=showMoreBtn onclick="showImages()">Show More +</button></a>
+            </div>
         </div>
-
+        
     </main>
 
-    <footer style="background: black; text-align: center;">
+    <!-- <footer style="background: black; text-align: center;">
         <div style="padding-top: 20px; padding-bottom: 20px;">
             <span>Designed by <a href="https://leviscott13.github.io/MyWebsite-v3/" target="_blank" style="color: #ff6666;">Levi Sutton</a></span>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+    <script src="js/work.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/about.js"></script>
+
 
     <script>
         AOS.init();
     </script>
 
     <script>
-        var $carousel = $('.carousel').flickity({
-        imagesLoaded: true,
-        percentPosition: false,
-        });
 
-        var $imgs = $carousel.find('.carousel-cell img');
-        // get transform property
-        var docStyle = document.documentElement.style;
-        var transformProp = typeof docStyle.transform == 'string' ?
-        'transform' : 'WebkitTransform';
-        // get Flickity instance
-        var flkty = $carousel.data('flickity');
-
-        $carousel.on( 'scroll.flickity', function() {
-        flkty.slides.forEach( function( slide, i ) {
-            var img = $imgs[i];
-            var x = ( slide.target + flkty.x ) * -1/3;
-            img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-        });
-        });
+        var moreImages = document.getElementById("more");
+        var moreBtnText = document.getElementById("showMoreBtn");
+        
+        function showImages(){
+            if(moreImages.style.display == "none"){
+                moreBtnText.innerHTML = "Show Less -";
+                moreImages.style.display = "flex";
+            }
+            else{
+                moreBtnText.innerHTML = "Show More +";
+                moreImages.style.display = "none";
+            }
+        }
     </script>
 </body>
 </html>
