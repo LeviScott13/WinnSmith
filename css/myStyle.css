@@ -46,7 +46,11 @@ span{
 .card:hover{
     transform: scale(1.1);
 }
-
+.roleContainer{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 35px;
+}
 .imgContainer{
     height: 100%;
 }
